@@ -19,6 +19,7 @@
       img.src = "Eid1.jpeg"
     }
     img.classList.add('print')
+    img.setAttribute("crossOrigin","anonymous");
     let nname = document.querySelector('#namein').value;
     name.innerText = " " +nname;
     name.classList.add('name');
@@ -27,10 +28,14 @@
     console.log("1");
     
     html2canvas(card).then(canvas => {
-      printedCanvas.appendChild(canvas)
-      
+      // printedCanvas.appendChild(canvas)
+      var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+      console.log(image);
+      window.location.href=image;
+
       console.log("2");
       card.classList.add('none');
+
   });
 
   console.log("3");
