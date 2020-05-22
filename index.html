@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="balloon">
+          <div></div>
+         </div>
+      </div>
+    </div>
+  </div>
+  
+        <div class="container">
+          <div class="row">
+            <form dir="rtl" style="width: 100%;">
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input style="text-align: center;"  type="text" class="form-control" id="namein"
+                   placeholder="الاسم الذي سيتم طباعته على البطاقة">
+                </div>
+              </div>
+              <fieldset class="form-group container">
+                <div class="row">
+                    
+                      <div class=" col-md-4 col-sm-12">
+                        <label style="width: 100%;">
+                          <input type="radio" name="test" id="eid1" value="small" >
+                          <img width="100%" src="Eid1.jpeg">
+                        </label>
+                      </div>
+                      <div class=" col-md-4 col-sm-12">
+                        <label style="width: 100%;">
+                          <input type="radio" name="test" id="eid2" value="small" checked>
+                          <img width="100%" src="Eid1.jpeg">
+                        </label>
+                      </div>
+                      <div class=" col-md-4 col-sm-12">
+                        <label style="width: 100%;">
+                          <input type="radio" name="test"  id="eid3"value="small" >
+                          <img width="100%" src="Eid1.jpeg">
+                        </label>
+                      </div>
+                      
+                      
+                </div>
+              </fieldset>
+              <div class="form-group row">
+                <div style="display: flex; justify-content: center;" class="col-sm-12">
+                  <button id="create" type="submit" class="btn btn-primary">Create</button>
+                </div>
+              </div>
+            </form>
+          </div>
+         
+          <div style="display: flex;" class="row" style="border: 1px solid red;">
+            <div  class="col-md-8 col-sm-12" id="can"> 
+            
+            </div>
+            
+            
+    
+          </div>
+          </div>
+
+          <div class="container">
+            <div style="display: flex; justify-content: center;" class="row">
+              <div id="printedCard" class="col-md-8">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div style="display: flex; justify-content: center;" class="row">
+              <div id="printedCanvas" class="col-md-8 col-sm-12">
+
+              </div>
+            </div>
+          </div>
+         
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+      <script src="html2canvas.min.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>
+<!-- 
+<div class="main">
+  <h1 class="heading">Wish Happy Birthday to your friends and family</h1>
+  <div class="container">
+    <form action="" id="birthday">
+      <label for="">Enter person's name:</label>
+      <br>
+      <input type="text" id="b-name" value="">
+      <br>
+      <label for="">Enter your message:</label>
+      <br>
+      <input type="text" id="b-message">
+      <br>
+      <label for="">Your Name:</label>
+      <br>
+      <input type="text" id="your-name">
+      <br>
+      <h2>Select background image</h2>
+     <div id="inputs">
+      <input type="radio" name="background" value="flowers" id="flowers" checked>Flowers
+      <br>
+      <input type="radio" name="background" value="cars" id="balloons">Balloons
+      <br>
+      <input type="radio" name="background" value="beach" id="beach">Beach
+       </div>
+      <br>
+      <input type="submit" value="Create Card"></input>
+      
+
+    </form>
+    
+    
+
+    <div class="card">
+      <h2>Happy Birthday</h2>
+      <h1 id="name"></h1>
+      <p id="message">Your card goes here...</p>
+      <p id="from"></p>
+        
+    </div>
+  </div>
+</div> -->
+
