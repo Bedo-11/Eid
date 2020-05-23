@@ -32,9 +32,11 @@
     
     html2canvas(card).then(canvas => {
      printedCanvas.appendChild(canvas)
-     var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-     window.location.href=img
+     var img = canvas.toDataURL("image/png");
+    //  window.location.href=img
       console.log(img)
+      var newTab = window.open();
+      newTab.document.body.innerHTML = '<img src="' +img+ '" width="100px" height="100px">';
     //  save(canvas);
     // var c = '<img src="'+img+'" width="300px" "/>';
     // var win = window.open();
