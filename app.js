@@ -31,7 +31,10 @@
     document.querySelector('#r').classList.add('none')
     
     html2canvas(card).then(canvas => {
-     document.body.appendChild(canvas)
+    //  document.body.appendChild(canvas)
+     let v = canvas.toDataURL('image/png');
+     document.write('<img src="'+v+'" width="100%" />');
+     
      card.classList.add('none');
         // console.log(canvas);
         // saveAs(canvas.toDataURL(), 'Eid.jpg');
