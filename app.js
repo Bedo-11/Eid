@@ -15,11 +15,13 @@
     let radio = document.querySelectorAll('input[type=radio]');
     let printedCanvas = document.querySelector('#printedCanvas');
 
-    
-      img.src = "Eid1.jpeg"
-    
+      if(eid2.checked){
+        img.src = "Eid2.png"
+      } else if (eid3.checked){
+        img.src = "Eid3.png"
+      }
     img.classList.add('print')
-    debugger
+    
     // img.setAttribute("crossOrigin","anonymous");
     let nname = document.querySelector('#namein').value;
     name.innerText = " " +nname;
