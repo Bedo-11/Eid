@@ -36,7 +36,7 @@
     //  window.location.href=img
       console.log(img)
       var newTab = window.open();
-      newTab.document.body.innerHTML = '<img src="' +img+ '" width="100px" height="100px">';
+      newTab.document.body.innerHTML = '<img src="' +img+ '" width="500px" height="500px">';
     //  save(canvas);
     // var c = '<img src="'+img+'" width="300px" "/>';
     // var win = window.open();
