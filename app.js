@@ -31,9 +31,10 @@
     document.querySelector('#r').classList.add('none')
     
     html2canvas(card).then(canvas => {
-    //  printedCanvas.appendChild(canvas)
+     printedCanvas.appendChild(canvas)
+     card.classList.add('none');
         // console.log(canvas);
-        saveAs(canvas.toDataURL(), 'Eid.jpg');
+        // saveAs(canvas.toDataURL(), 'Eid.jpg');
      
     //  var img = canvas.toDataURL("image/png");
     //  window.location.href=img
@@ -53,30 +54,30 @@
   });
 
 
-function saveAs(uri, filename) {
+// function saveAs(uri, filename) {
 
-  var link = document.createElement('a');
+//   var link = document.createElement('a');
 
-  if (typeof link.download === 'string') {
+//   if (typeof link.download === 'string') {
 
-      link.href = uri;
-      link.download = filename;
+//       link.href = uri;
+//       link.download = filename;
 
-      //Firefox requires the link to be in the body
-      document.body.appendChild(link);
+//       //Firefox requires the link to be in the body
+//       document.body.appendChild(link);
 
-      //simulate click
-      link.click();
+//       //simulate click
+//       link.click();
 
-      //remove the link when done
-      document.body.removeChild(link);
+//       //remove the link when done
+//       document.body.removeChild(link);
 
-  } else {
+//   } else {
 
-      window.open(uri);
+//       window.open(uri);
 
-  }
-}
+//   }
+// }
 
   }
 
