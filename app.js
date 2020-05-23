@@ -33,7 +33,7 @@
     html2canvas(card).then(canvas => {
     //  printedCanvas.appendChild(canvas)
         // console.log(canvas);
-        saveAs(canvas.toDataURL(), 'file-name.png');
+        saveAs(canvas.toDataURL(), 'Eid');
      
     //  var img = canvas.toDataURL("image/png");
     //  window.location.href=img
