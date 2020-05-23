@@ -32,14 +32,18 @@
     
     html2canvas(card).then(canvas => {
      printedCanvas.appendChild(canvas)
-     var img = canvas.toDataURL("image/png");
-
+     var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+     window.location.href=img
       console.log(img)
     //  save(canvas);
-    var win = window.open(document.write('<img src="'+img+'"/>'));
-    win.document.write('<img src="'+img+'" width="300px" style="margin-top:50px;"/>');
+    // var c = '<img src="'+img+'" width="300px" "/>';
+    // var win = window.open();
+    // win.document.open();
+    // win.document.write(c);
+    // win.document.body.appendChild(c)
+    // win.location.href = img
+    // win.document.close();
      card.classList.add('none')
-     
       console.log("2");
   });
 
