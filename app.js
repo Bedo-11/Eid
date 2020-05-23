@@ -48,7 +48,7 @@
     // win.document.body.appendChild(c)
     // win.location.href = img
     // win.document.close();
-     card.classList.add('none')
+    //  card.classList.add('none')
       console.log("2");
   });
 
