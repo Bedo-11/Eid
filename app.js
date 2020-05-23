@@ -14,6 +14,7 @@
     let name = document.createElement("div");
     let radio = document.querySelectorAll('input[type=radio]');
     let printedCanvas = document.querySelector('#printedCanvas');
+    let hero = document.querySelector('#hero');
 
       if(eid2.checked){
         img.src = "Eid2.png"
@@ -33,8 +34,12 @@
     html2canvas(card).then(canvas => {
     //  document.body.appendChild(canvas)
      let v = canvas.toDataURL('image/png');
-     document.write('<img src="'+v+'" width="100%" />');
-     
+     let h = document.createElement("img");
+     h.setAttribute('width',"100%");
+     h.src = v;
+     console.log(h)
+     console.log(v)
+     hero.appendChild(h);
      card.classList.add('none');
         // console.log(canvas);
         // saveAs(canvas.toDataURL(), 'Eid.jpg');
