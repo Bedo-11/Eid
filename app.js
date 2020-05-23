@@ -37,7 +37,7 @@
       console.log(img)
     //  save(canvas);
     var win = window.open(document.write('<img src="'+img+'"/>'));
-    win.document.write('<img src="'+img+'" width="100%"/>');
+    win.document.write('<img src="'+img+'" width="300px" style="margin-top:50px;"/>');
      card.classList.add('none')
      
       console.log("2");
