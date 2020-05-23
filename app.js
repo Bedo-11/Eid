@@ -8,7 +8,7 @@
 
   function CreateCanvas(e) {
     
-    console.log("GG");
+    // console.log("GG");
     let card = document.querySelector("#printedCard");
     let img = document.createElement("img");
     let name = document.createElement("div");
@@ -31,12 +31,15 @@
     document.querySelector('#r').classList.add('none')
     
     html2canvas(card).then(canvas => {
-     printedCanvas.appendChild(canvas)
-     var img = canvas.toDataURL("image/png");
+    //  printedCanvas.appendChild(canvas)
+        // console.log(canvas);
+        saveAs(canvas.toDataURL(), 'file-name.png');
+     
+    //  var img = canvas.toDataURL("image/png");
     //  window.location.href=img
-      console.log(img)
-      var newTab = window.open();
-      newTab.document.body.innerHTML = '<img src="' +img+ '" width="500px" height="500px">';
+      // console.log(img)
+      // var newTab = window.open();
+      // newTab.document.body.innerHTML = canvas;
     //  save(canvas);
     // var c = '<img src="'+img+'" width="300px" "/>';
     // var win = window.open();
@@ -48,6 +51,32 @@
      card.classList.add('none')
       console.log("2");
   });
+
+
+function saveAs(uri, filename) {
+
+  var link = document.createElement('a');
+
+  if (typeof link.download === 'string') {
+
+      link.href = uri;
+      link.download = filename;
+
+      //Firefox requires the link to be in the body
+      document.body.appendChild(link);
+
+      //simulate click
+      link.click();
+
+      //remove the link when done
+      document.body.removeChild(link);
+
+  } else {
+
+      window.open(uri);
+
+  }
+}
 
   }
 
