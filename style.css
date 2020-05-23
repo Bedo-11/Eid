@@ -6,40 +6,11 @@
   border: 1px solid #0089A2;
 }
 
- 
-.balloon { 
-  width: 738px;
-  margin: 0 auto;
-  padding-top: 30px;
-  position: relative;
-}
-.balloon > div {
-   width:104px;
-  height:140px; 
-  background: rgba(182, 15, 97, 0.9);
-  border-radius:0;
-  border-radius:80% 80% 80% 80%;
-  margin: 0 auto;
-  position: relative;
-  padding:10px;
-  box-shadow:inset 17px 7px 10px rgba(182, 15, 97, 0.9); 
-  -webkit-transform-origin: bottom center; 
-}
-.balloon > div{
-  background: rgba(182, 15, 97, 0.9);
-  left: 0; 
-  box-shadow:inset 10px 10px 10px darken(rgba(182, 15, 97, 0.9), 10%);
-  -webkit-animation:balloon1 6s ease-in-out infinite;
-  -moz-animation:balloon1 6s ease-in-out infinite;
-  -o-animation:balloon1 6s ease-in-out infinite;
-  animation:balloon1 6s ease-in-out infinite;
-  &:before { 
-   color: rgba(182, 15, 97, 0.9) ;
-  }
-
-}
 
 
+body {
+  height: 200vh;
+}
 
 .balloon > div:before {
   color:rgba(182, 15, 97, 0.9);
@@ -82,9 +53,11 @@
   color: white;
 }
 
+
+
 .name {
   position: absolute;
-  top: 80%;
+  top: 81%;
   left: 50%;
   transform: translate(-50%, -50%);
   word-spacing: 10px;
@@ -95,8 +68,9 @@
 }
 
 
-canvas {
-  margin: auto;
+.bla {
+  width: 300px;
+  height: 500px;
 }
 
 /* HIDE RADIO */
