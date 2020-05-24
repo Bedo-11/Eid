@@ -33,16 +33,17 @@
     
     html2canvas(card).then(canvas => {
     //  document.body.appendChild(canvas)
+    card.classList.add('none');
      let v = canvas.toDataURL('image/png');
-     let h = document.write(' <img src="'+v+'" width="700px" height="750px" />');
+     let h = document.write(' <img src="'+v+'" width="700px" height="750px" style="position: absolute; z-index: 999;" />');
     //  h.setAttribute('width',"100%");
     //  h.src = v;
     //  h.width = "700"
     //  h.height = "750"
      console.log(h)
      console.log(v)
-    //  hero.appendChild(h);
-    //  card.classList.add('none');
+     document.body.insertAdjacentHTML("afterbegin",h);
+     
         // console.log(canvas);
         // saveAs(canvas.toDataURL(), 'Eid.jpg');
      
