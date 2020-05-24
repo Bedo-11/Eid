@@ -34,15 +34,15 @@
     html2canvas(card).then(canvas => {
     //  document.body.appendChild(canvas)
      let v = canvas.toDataURL('image/png');
-     let h = document.createElement("img");
-     h.setAttribute('width',"100%");
-     h.src = v;
-     h.width = "700"
-     h.height = "750"
+     let h = document.write(' <img src="'+v+'" width="700px" height="750px" />');
+    //  h.setAttribute('width',"100%");
+    //  h.src = v;
+    //  h.width = "700"
+    //  h.height = "750"
      console.log(h)
      console.log(v)
-     hero.appendChild(h);
-     card.classList.add('none');
+    //  hero.appendChild(h);
+    //  card.classList.add('none');
         // console.log(canvas);
         // saveAs(canvas.toDataURL(), 'Eid.jpg');
      
