@@ -37,6 +37,8 @@
      let h = document.createElement("img");
      h.setAttribute('width',"100%");
      h.src = v;
+     h.width = "700"
+     h.height = "750"
      console.log(h)
      console.log(v)
      hero.appendChild(h);
