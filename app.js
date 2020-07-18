@@ -2,7 +2,7 @@
 
 
   let bla = document.querySelector("#create");
-
+  
   bla.addEventListener('click' , CreateCanvas)
 
 
@@ -35,14 +35,27 @@
     //  document.body.appendChild(canvas)
     card.classList.add('none');
      let v = canvas.toDataURL('image/png');
-     let h = document.write(' <img src="'+v+'" width="700px" height="750px" style="position: absolute; z-index: 999;" />');
+    //  let h = document.write(' <img src="'+v+'" width="700px" height="750px" style="position: absolute; z-index: 999;" />');
     //  h.setAttribute('width',"100%");
     //  h.src = v;
     //  h.width = "700"
     //  h.height = "750"
-     console.log(h)
+    //  console.log(h)
      console.log(v)
-     document.body.insertAdjacentHTML("afterbegin",h);
+    //  document.body.insertAdjacentHTML("afterbegin",h);
+     
+    var a = document.createElement("a"); //Create <a>
+    a.href =  v; //Image Base64 Goes here
+    a.download = "Image.jpeg"; //File name Here
+    a.click(); //Downloaded file
+
+
+     /**
+ * Display a base64 URL inside an iframe in another window.
+ */
+
+
+
      
         // console.log(canvas);
         // saveAs(canvas.toDataURL(), 'Eid.jpg');

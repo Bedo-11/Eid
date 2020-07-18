@@ -14,6 +14,7 @@ canvas {
 }
 
 
+
 .none {
   display: none;
   visibility: hidden;
@@ -29,14 +30,14 @@ body {
   height: 100vh;
 }
 
-
 .name {
   position: absolute;
   top: 81%;
   left: 50%;
+  direction: rtl;
   text-align: center;
   transform: translate(-50%, -50%);
-  /* word-spacing: 10px; */
+  word-spacing: -0.5em;
   color: #fff;
   font-weight: bolder;
   font-size: 150%;

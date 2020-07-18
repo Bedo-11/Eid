@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,16 @@
     </div>
   </div> -->
 
+ 
+
   <div style="height: 10vh;" class="container"></div>
+
   
         <div id="r" class="container">
           <div class="row">
               <div style="margin: auto;" class="form-group row">
                 <div class="col-sm-12">
-                  <input dir="rtl" style="text-align: center;"  type="text" class="form-control" id="namein"
+                  <input dir="rtl" style="text-align: center; word-spacing: 5px;"  type="text" class="form-control" id="namein"
                    placeholder="الاسم الذي سيتم طباعته على البطاقة">
                 </div>
               </div>
@@ -35,7 +38,7 @@
               <fieldset class="form-group container">
                 <div class="row">
                     
-                      <div class=" col-md-6 col-sm-12">
+                      <!-- <div class=" col-md-6 col-sm-12">
                         <label>
                           <input type="radio" name="test" id="eid2" value="small" checked>
                           <img width="100%" src="Eid2.png">
@@ -46,6 +49,40 @@
                           <input type="radio" name="test"  id="eid3" value="small" >
                           <img width="100%" src="Eid3.png">
                         </label>
+                      </div> -->
+                      <div id="demo" style="width: 50%; margin: auto;" class="carousel slide" data-interval="false" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                      
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <label>
+                              <input type="radio" name="test" id="eid2" value="small" checked>
+                              <img width="100%" src="Eid2.png">
+                            </label>
+                          </div>
+                          <div class="carousel-item">
+                            <label>
+                              <input type="radio" name="test"  id="eid3" value="small" >
+                              <img width="100%" src="Eid3.png">
+                            </label>
+                          </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      
                       </div>
                       
                       
