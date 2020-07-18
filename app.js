@@ -28,7 +28,7 @@
 
       var image = new Image();
       if(eid2.checked){
-        document.getElementById('preview').setAttribute("src",'Eid2.png');
+        document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
       } else if (eid3.checked){
         document.getElementById('preview').setAttribute("src",'Eid3.png');
       }
