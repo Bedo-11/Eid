@@ -3,8 +3,11 @@
 
   let bla = document.querySelector("#create");
   document.getElementById("canvas").style.visibility = "hidden";
-  document.getElementById("preview").style.visibility = "hidden";
+  document.getElementById("preview2").style.visibility = "hidden";
+  document.getElementById("preview3").style.visibility = "hidden";
   document.getElementById("download").style.visibility = "hidden";
+  
+
   let card = document.querySelector("#printedCard");
   let name = document.createElement("div");
   let radio = document.querySelectorAll('input[type=radio]');
@@ -27,14 +30,11 @@
     // console.log("GG");
 
       var image = new Image();
-      // if(eid2.checked){
-      //   document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
-      // } else if (eid3.checked){
-      //   document.getElementById('preview').setAttribute("src",'Eid3.png');
-      // } else {
-      //   document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
-      // }
-      var image = document.getElementById('preview');
+      if(eid2.checked){
+        var image = document.getElementById('preview2');
+      } else if (eid3.checked){
+        var image = document.getElementById('preview3');
+      } 
       // canvas.width= image.clientWidth;
       // canvas.height= image.clientHeight;
   
@@ -61,7 +61,8 @@
   
   
   
-      document.getElementById("preview").style.visibility = "hidden";
+      document.getElementById("preview2").style.visibility = "hidden";
+      document.getElementById("preview3").style.visibility = "hidden";
   
       var image = canvas.toDataURL("image/jpg");
       // document.getElementById("download").href = image;
