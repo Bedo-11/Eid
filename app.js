@@ -27,11 +27,13 @@
     // console.log("GG");
 
       var image = new Image();
-      if(eid2.checked){
-        document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
-      } else if (eid3.checked){
-        document.getElementById('preview').setAttribute("src",'Eid3.png');
-      }
+      // if(eid2.checked){
+      //   document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
+      // } else if (eid3.checked){
+      //   document.getElementById('preview').setAttribute("src",'Eid3.png');
+      // } else {
+      //   document.getElementById('preview').setAttribute("src",'Eid1.jpeg');
+      // }
       var image = document.getElementById('preview');
       // canvas.width= image.clientWidth;
       // canvas.height= image.clientHeight;
