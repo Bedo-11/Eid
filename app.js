@@ -109,7 +109,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
   ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
   ball.style.transform = `scale(${Math.random()})`;
-  ball.style.width = `${Math.random()}em`;
+  ball.style.width = `1em`;
   ball.style.height = ball.style.width;
   ball.style.zIndex = "-1";
   
