@@ -6,6 +6,7 @@
   document.getElementById("preview2").style.visibility = "hidden";
   document.getElementById("preview3").style.visibility = "hidden";
   document.getElementById("download").style.visibility = "hidden";
+  document.getElementById("download").style.display = "none";
   
 
   let card = document.querySelector("#printedCard");
@@ -32,8 +33,10 @@
       var image = new Image();
       if(eid2.checked){
         var image = document.getElementById('preview2');
+        var n = 450;
       } else if (eid3.checked){
         var image = document.getElementById('preview3');
+        var n = 480;
       } 
       // canvas.width= image.clientWidth;
       // canvas.height= image.clientHeight;
@@ -57,7 +60,7 @@
   
       context.moveTo(0,canvas.height/2);
     
-      context.fillText(document.getElementById("txtName").value,canvas.width/2,(canvas.height/2)+450);
+      context.fillText(document.getElementById("txtName").value,canvas.width/2,(canvas.height/2)+n);
   
   
   
