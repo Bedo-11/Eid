@@ -84,7 +84,7 @@ img:active {
 
 /* CHECKED STYLES */
  [type=radio]:checked + img {
-  border: 10px solid green;
+  border: 5px solid #ffc107;
 } 
 
 
