@@ -72,6 +72,13 @@ img:active {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #ffc107;
+  text-align: center;
+  margin: auto;
+}
+
 /* HIDE RADIO */
 [type=radio] { 
   position: absolute;
