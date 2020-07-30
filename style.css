@@ -80,7 +80,7 @@ img:active {
 
 /* CHECKED STYLES */
  [type=radio]:checked + img {
-  border-top: 15px solid green;
+  border: 10px solid green;
 } 
 
 
