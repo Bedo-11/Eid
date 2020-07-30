@@ -17,7 +17,7 @@
 
   var canvas = document.getElementById("canvas");
   var dwn = document.getElementById('btndownload')
-  canvas.width= 1700;
+  canvas.width= 1500;
   canvas.height= 1500;
   var context = canvas.getContext("2d");
 
