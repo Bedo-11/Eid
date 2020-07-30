@@ -67,7 +67,10 @@ img:active {
   height: 500px;
 }
 
-
+#yell {
+  color: #ffc107;
+  text-align: center;
+}
 
 /* HIDE RADIO */
 [type=radio] { 
