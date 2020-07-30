@@ -38,6 +38,14 @@
         var image = document.getElementById('preview3');
         var n = 480;
       } 
+      if (!(eid2.checked || eid3.checked)) {
+        let name = document.createElement("h4");
+        name.innerHTML = "الرجاء اختيار تصميم"; 
+        name.style.color = "red";
+        var err = document.querySelector('.err');
+        err.appendChild(name);
+        return false;
+    }
       // canvas.width= image.clientWidth;
       // canvas.height= image.clientHeight;
   
